@@ -7,19 +7,66 @@
 }
 
 :root {
-  --bg-dark-purple: #2E0F38;
+  --bg-dark-purple: #470061;
+  --medium-purple: #965cb3c4;
   --bg-light-purple: #8351A8;
   --text-blue: #1A2C54;
   --text-light-rose: #F3B0DC;
   --text-gray: #888;
+  --dark: #21252f;
+  --orange: #FAB818;
+  --light-dark: #59595B;
 }
 
 p {
   font-weight: 500;
 }
 
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.text-700 {
+  font-weight: 700;
+}
+
+.text-light-purple {
+  color: var(--bg-light-purple);
+}
+
+.text-dark-purple {
+  color: var(--bg-dark-purple);
+}
+
+.text-medium-purple {
+  color: var(--medium-purple)
+}
+
+.text-light-rose {
+  color: var(--text-light-rose);
+
+}
+
+.text-light-dark {
+  color: var(--light-dark) !important;
+}
+
+.text-orange {
+  color: var(--orange);
+
+}
+
+.text-gray {
+  color: var(--text-gray) !important;
+}
+
 .navbar {
-  background-color: #2e0f38a2;
+  background-color: #2e0f38;
 
 }
 
@@ -36,7 +83,8 @@ p {
 .logo {
   color: #fff;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 5px;
 }
 
 .hero {
@@ -78,7 +126,7 @@ p {
 
 .devices {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 
 .devices p {
@@ -107,6 +155,79 @@ p {
 }
 
 .my-btn:hover {
-  background-color: #b808f2f0;
+  background-color: #8251a8d1;
 
+}
+
+.anime-box {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.anime-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 20, 51, .8);
+  padding: 30px;
+  transition: all .4s ease;
+  opacity: 0;
+}
+
+.anime-box img {
+  transition: all .4s ease;
+
+}
+
+.anime-box:hover .overlay {
+  opacity: 1;
+}
+
+.anime-box:hover img {
+  transform: scale(1.1);
+}
+
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  padding: 2.2rem;
+  transition: all .35s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+#pricing {
+  padding-top: 120px;
+}
+
+.icon-pricing {
+  height: 100%;
+  width: 200px;
+}
+
+.pricing .iconbox i {
+  color: var(--text-light-rose);
+}
+
+.pricing i {
+
+  color: var(--bg-light-purple);
+
+}
+
+.pricing ul li {
+  margin-top: 15px;
+}
+
+.rounded-purple-bg {
+  background-color: var(--bg-light-purple);
+  padding: 40px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
