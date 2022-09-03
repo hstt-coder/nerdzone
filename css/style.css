@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+:root {
+  --bg-dark-purple: #2E0F38;
+  --bg-light-purple: #8351A8;
+  --text-blue: #1A2C54;
+  --text-light-rose: #F3B0DC;
+  --text-gray: #888;
+}
+
+p {
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: #2e0f38a2;
+
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: var(--text-light-rose);
+}
+
+.logo {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero {
+  background-image: url(../img/wallpaper.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 20, 51, .8);
+  z-index: -1;
+}
+
+.hero-container {
+  margin-bottom: 20%;
+}
+
+.hero h1 {
+  font-weight: 900;
+}
+
+.iconbox {
+  width: 54px;
+  height: 54px;
+  color: #fff;
+  font-size: 50px;
+  flex: none;
+  margin-bottom: 5px;
+}
+
+.devices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.devices p {
+  color: var(--text-gray);
+  font-weight: 700;
+}
+
+.devices-bg {
+  background-image: url(../img/devices.png);
+  background-position: center;
+  background-size: cover;
+
+  height: 70%;
+  width: 100%;
+}
+
+
+
+.my-btn {
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--bg-light-purple);
+  color: #fff;
+  border: none;
+}
+
+.my-btn:hover {
+  background-color: #b808f2f0;
+
+}

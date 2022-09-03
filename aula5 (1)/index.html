@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- CSS COM CORES -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <title>MyGamePage</title>
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand my-logo" href="#zelda">MyGamePage</a>
+            <!-- BOTÃO HAMBURGUER-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#minhaNavBar"
+                aria-controls="minhaNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--LINKS -->
+            <div class="collapse navbar-collapse" id="minhaNavBar">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#zelda">Zelda</a>
+                    <a class="nav-link" href="#re">Resident Evil</a>
+                    <a class="nav-link" href="#tomb">Tomb Raider</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="meuCarrossel" class="carousel slide d-md-block d-none" data-bs-ride="true">
+        <!-- INDICADORES - ABAIXO DAS IMAGENS-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Zelda"></button>
+            <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1" aria-label="RE"></button>
+            <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2" aria-label="Tomb Raider"></button>
+        </div>
+        <!-- CONTEÚDO - MINHAS IMAGENS / DIVS -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/fundo1.jpg" class="d-block w-100" alt="Zelda">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/fundo2.jpg" class="d-block w-100" alt="RE">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/fundo3.jpg" class="d-block w-100" alt="Tomb Raider">
+            </div>
+        </div>
+        <!-- FLECHINHAS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span> <!-- Anterior -->
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span> <!-- Próximo -->
+        </button>
+    </div>
+
+    <main class="container fonte-padrao">
+
+        <section id="zelda" class="row mt-3">
+            <!-- Primeira coluna -->
+            <div class="col-lg-6 col-md-12">
+                <div class="bg-light-green rounded p-1 d-flex mb-lg-0 mb-3">
+                    <img src="./img/zelda.png" alt="Zelda" class="img-fluid w-50" />
+                    <div>
+                        <h2>Princess Zelda</h2>
+                        <p>
+                            Princess Zelda is the princess of Hyrule and the guardian of the
+                            Triforce of Wisdom. Her name is present in many of her female
+                            ancestors and descendants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda coluna -->
+            <div class="col-lg-6 col-md-12">
+                <div class="bg-light-green rounded p-1 d-flex">
+                    <img src="./img/link.png" alt="Link" class="img-fluid w-50" />
+                    <div>
+                        <h2>Not Zelda</h2>
+                        <p>
+                            Link is the central protagonist of The Legend of Zelda series,
+                            Link is the name of various young men who characteristically
+                            wear a green tunic and a pointed cap.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="re" class="row bg-olive rounded mt-3 p-3">
+            <!-- Div texto -->
+            <div class="col-lg-8 col-md-12">
+                <h2>Resident Evil 2</h2>
+                <h3>History</h3>
+                <p>
+                    Two months after Resident Evil, most of Raccoon City citizens have been turned into zombies
+                    by a leak of Umbrella's T-Virus. At a gas station outside town, rookie police officer
+                    Leon S. Kennedy meets college student Claire Redfield, who is looking for her brother Chris.
+
+                    After being separated in Raccoon City, Leon and Claire agree to meet up at the Raccoon
+                    police department. The building is infested by zombies, and other monsters including the
+                    T-00, or "Tyrant", dispatched to hunt down and kill any survivors. The creatures and
+                    various obstacles prevent Leon and Claire from actually reuniting as they are forced to find
+                    a way to escape Raccoon City.
+
+                    Claire scenario
+                    Claire learns Chris left on vacation and rescues young Sherry Birkin from a monster. Corrupt
+                    police chief Irons, abducts Sherry and locks her in the orphanage. He later calls Claire to
+                    trade a pendant Sherry dropped in exchange for her. Sherry tries to escape on her own, but
+                    the monster returns and kills Irons. Claire and Sherry are cornered by Mr. X, who is killed
+                    by the monster stalking Sherry; as a result, their elevator crashes and knocks Claire out.
+                </p>
+            </div>
+            <!-- Div da imagem -->
+            <div class="col-lg-4 col-md-12 d-flex align-self-center">
+                <img src="./img/re2.jpg" alt="Resident Evil 2" class="img-fluid rounded">
+            </div>
+        </section>
+
+        <section id="tomb" class="row bg-dark-green rounded mt-3 mb-3 p-3">
+            <div>
+                <img src="./img/tomb.jpg" alt="Lara Croft" class="img-fluid rounded-circle float-start me-2 img-200">
+
+                <h2>Tomb Raider</h2>
+                <h3>History</h3>
+                <p>
+                    Tomb Raider, also known as Lara Croft: Tomb Raider between 2001 and 2007, is a media franchise that
+                    originated with an action-adventure video game series created by British gaming company Core Design.
+                    Formerly owned by Eidos Interactive, then by Square Enix after their acquisition of Eidos in 2009,
+                    the franchise focuses on a fictional British archaeologist Lara Croft, who travels around the world
+                    searching for lost artefacts and infiltrating dangerous tombs and ruins. The gameplay generally
+                    focuses around action-adventure exploration of environments, solving puzzles, navigating hostile
+                    environments filled with traps, and fighting numerous enemies. Additional media has grown up around
+                    the theme in the form of film adaptations, comics and novels.
+
+                    Lara Croft is the main protagonist and playable character of the series: she travels the world in
+                    search of forgotten artifacts and locations, frequently connected to supernatural
+                    powers. While her biography has changed throughout the series, her shared traits are her
+                    origins as the only daughter and heir of the aristocratic Croft family. She is portrayed
+                    as intelligent, athletic, elegant, fluent in multiple languages, and determined to fulfill her own
+                    goals at any cost. She has brown eyes and brown hair worn in a braid or ponytail.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

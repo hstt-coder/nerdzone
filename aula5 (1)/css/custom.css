@@ -1,0 +1,36 @@
+/* Background */
+.bg-dark {
+    background-color: #2F4858;
+    color: whitesmoke;
+}
+
+.bg-light-green {
+    background-color: #649C84;
+}
+
+.bg-olive {
+    background-color: #266072;
+}
+
+.bg-dark-green {
+    background-color: #384B42;
+}
+
+/* Fonts */
+.my-logo {
+    font-family: 'Bad Script', cursive;
+    color: whitesmoke;
+}
+
+.fonte-padrao {
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+.img-200 {
+    width: 200px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
