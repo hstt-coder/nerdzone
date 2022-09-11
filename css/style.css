@@ -92,7 +92,7 @@ section {
 
 .logo {
   color: #fff;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 5px;
 }
@@ -118,7 +118,14 @@ section {
 }
 
 .hero-container {
-  margin-bottom: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-hero-container {
+  bottom: 0;
+
 }
 
 .hero h1 {
